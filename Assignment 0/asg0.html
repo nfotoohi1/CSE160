@@ -1,0 +1,47 @@
+<!DOCTYPE html> <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSE160 - Assignment 0</title>
+  </head>
+  <body onload="main()">
+    <div id="canvasBox" style="display: flex; align-items: flex-start;">
+      <canvas id="Canvas" width="400" height="400"> I don't know what I'm doing and evidently neither do you. </canvas>
+    </div>
+    <div id="inputBox">
+      <div>
+        <div style="position: relative; left: 420px; top: -390px;">
+          V1 x value: <input type="text" id="v1x" placeholder="Enter Number Value">
+          V1 y value: <input type="text" id="v1y" placeholder="Enter Number Value">
+        </div>
+        <div style="position: relative; left: 420px; top: -385px;">
+          V2 x value: <input type="text" id="v2x" placeholder="Enter Number Value">
+          V2 y value: <input type="text" id="v2y" placeholder="Enter Number Value">
+        </div>
+        <div style="position: relative; left: 420px; top: -380px;">
+          <input type="button" id="draw" value="Draw!" onclick="handleDrawEvent()" style="background-color: rgb(185, 185, 185); color: black; width: 50px; font-size: 13px;">
+        </div>
+      </div>
+      <div style="position: relative; left: 420px; top: -370px;">
+        Choose Operation: <select id="op">
+          <option>-- Select One --</option>
+          <option value="add">Add</option>
+          <option value="sub">Subtract</option>
+          <option value="mul">Multiply</option>
+          <option value="div">Divide</option>
+          <option value="mag">Magnitude</option>
+          <option value="nor">Normalize</option>
+          <option value="ang">Angle Between</option>
+          <option value="cro">Area</option>
+        </select>
+      </div>
+      <div id="scalarBox" style="display: none; position: relative; left: 420px; top: -365px;">
+        Scalar: <input type="text" id="scalar" placeholder="Enter Number Value">
+      </div>
+      <div style="position: relative; left: 420px; top: -360px;">
+        <input type="button" id="drawOp" value="Draw!" onclick="handleDrawOperationEvent()" style="background-color: rgb(185, 185, 185); color: black; width: 50px; font-size: 13px;">
+      </div>
+    </div>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="asg0.js"></script>
+  </body>
+</html>

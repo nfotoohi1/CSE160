@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSE160 - Assignment 1</title>
+  </head>
+  <body onload="main()">
+    <div>
+      <canvas id="Canvas" width="400" height="400" > I don't know what I'm doing and evidently, neither do you. </canvas>
+      <div style="position: relative; left: 420px; top: -410px;">
+        <p id="performance"> XXX </p>
+      </div>
+      <div style="position: relative; left: 420px; top: -410px;">
+        <p>Choose a Shape:</p>
+      </div>
+      <div style="position: relative; left: 420px; top: -420px;">
+        <button type="button" id="pointB" style="background-color: rgb(216, 216, 216); color: black; width: 50px; font-size: 13px;">Point</button>
+        <button type="button" id="triangleB" style="background-color: rgb(216, 216, 216); color: black; width: 70px; font-size: 13px;">Triangle</button>
+        <button type="button" id="circleB" style="background-color: rgb(216, 216, 216); color: black; width: 50px; font-size: 13px;">Circle</button>
+      </div>
+      <div style="position: relative; left: 620px; top: -450px;">
+        <label for="slideR">(Circle) Segement:</label><br>
+        <input type="range" min="10" max="360" value="10" class="slider" id="slideSeg">
+      </div>
+      <div style="position: relative; left: 420px; top: -450px;">
+        <p>Choose a Color:</p>
+      </div>
+      <div style="position: relative; left: 420px; top: -455px;">
+        <button type="button" id="redB" style="background-color: rgb(216, 216, 216); color: black; width: 50px; font-size: 13px;">Red</button>
+        <button type="button" id="orangeB" style="background-color: rgb(216, 216, 216); color: black; width: 60px; font-size: 13px;">Orange</button>
+        <button type="button" id="yellowB" style="background-color: rgb(216, 216, 216); color: black; width: 60px; font-size: 13px;">Yellow</button>
+        <button type="button" id="greenB" style="background-color: rgb(216, 216, 216); color: black; width: 55px; font-size: 13px;">Green</button>
+        <button type="button" id="blueB" style="background-color: rgb(216, 216, 216); color: black; width: 50px; font-size: 13px;">Blue</button>
+        <button type="button" id="purpleB" style="background-color: rgb(216, 216, 216); color: black; width: 55px; font-size: 13px;">Purple</button>
+        <button type="button" id="pinkB" style="background-color: rgb(216, 216, 216); color: black; width: 50px; font-size: 13px;">Pink</button>
+        <button type="button" id="brownB" style="background-color: rgb(216, 216, 216); color: black; width: 55px; font-size: 13px;">Brown</button>
+        <button type="button" id="blackB" style="background-color: rgb(216, 216, 216); color: black; width: 50px; font-size: 13px;">Black</button>
+        <button type="button" id="grayB" style="background-color: rgb(216, 216, 216); color: black; width: 50px; font-size: 13px;">Gray</button>
+        <button type="button" id="whiteB" style="background-color: rgb(216, 216, 216); color: black; width: 50px; font-size: 13px;">White</button>
+      </div>
+      <div style="position: relative; left: 420px; top: -450px;">
+        <p>Custom Color:</p>
+      </div>
+      <div style="position: relative; left: 420px; top: -455px;">
+        <label for="slideR">Red</label><br>
+        <input type="range" min="0" max="100" value="100" class="slider" id="slideR">
+      </div>
+      <div style="position: relative; left: 570px; top: -495px;">
+        <label for="slideR">Green</label><br>
+        <input type="range" min="0" max="100" value="100" class="slider" id="slideG">
+      </div>
+      <div style="position: relative; left:720px; top: -535px;">
+        <label for="slideR">Blue</label><br>
+        <input type="range" min="0" max="100" value="100" class="slider" id="slideB">
+      </div>
+      <div style="position: relative; left: 420px; top: -520px;">
+        <label for="slideR">Brush Size:</label><br>
+        <input type="range" min="5" max="30" value="20" class="slider" id="slideSize">
+      </div>
+      <div style="position: relative; left: 420px; top: -475px;">
+        <button type="button" id="clearB" style="background-color: rgb(216, 216, 216); color: black; width: 50px; font-size: 13px;">Clear</button>
+      </div>
+      <div style="position: relative; left: 420px; top: -538px;">
+        <button type="button" id="paintingB" style="background-color: rgb(216, 216, 216); color: black; width: 70px; font-size: 13px;">Painting</button>
+      </div>
+      <div style="position: relative; left: 600px; top: -455px;">
+        <canvas id="colorCanvas" width="100" height="100" > I don't know what I'm doing and evidently, neither do you. </canvas>
+      </div>
+    </div>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="ColoredPoints.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Painting.js"></script>
+  </body>
+</html>

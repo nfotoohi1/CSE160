@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSE160 - Assignment 2</title>
+  </head>
+  <body onload="main()">
+    <div>
+      <canvas id="Canvas" width="400" height="400" > I don't know what I'm doing and evidently, neither do you. </canvas>
+      <div style="position: relative; left: 420px; top: -410px;">
+        <p id="performance"> XXX </p>
+      </div>
+      <div style="position: relative; left: 420px; top: -415px;">
+        <label for="slideRotate">Animation:</label><br>
+        <button type="button" id="animationOn" style="background-color: rgb(216, 216, 216); color: black; width: 40px; font-size: 13px;">On</button>
+        <button type="button" id="animationOff" style="background-color: rgb(216, 216, 216); color: black; width: 50px; font-size: 13px;">Off</button>
+      </div>
+      <div style="position: relative; left: 550px; top: -455px;">
+        <label for="slideRotate">Rotate:</label><br>
+        <input type="range" min="-180" max="180" value="0" class="slider" id="slideRotate">
+      </div>
+      <div style="position: relative; left: 420px; top: -440px;">
+        <label for="slideTail">Tail</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideTail"><br>
+      </div>
+      <div style="position: relative; left: 420px; top: -430px;">
+        <label for="slideFRT">Front Right Thigh</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideFRT"><br>
+        <label for="slideFRC">Front Right Calf</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideFRC"><br>
+        <label for="slideFRP">Front Right Paw</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideFRP">
+      </div>
+      <div style="position: relative; left: 600px; top: -553px;">
+        <label for="slideFLT">Front Left Thigh</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideFLT"><br>
+        <label for="slideFLC">Front Left Calf</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideFLC"><br>
+        <label for="slideFLP">Front Left Paw</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideFLP">
+      </div>
+      <div style="position: relative; left: 420px; top: -535px;">
+        <label for="slideBRT">Back Right Thigh</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideBRT"><br>
+        <label for="slideBRC">Back Right Calf</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideBRC"><br>
+        <label for="slideBRP">Back Right Paw</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideBRP">
+      </div>
+      <div style="position: relative; left: 600px; top: -658px;">
+        <label for="slideBLT">Back Left Thigh</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideBLT"><br>
+        <label for="slideBLC">Back Left Calf</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideBLC"><br>
+        <label for="slideBLP">Back Left Paw</label><br>
+        <input type="range" min="-45" max="45" value="0" class="slider" id="slideBLP">
+      </div>
+    </div>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="BlockyAnimal.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Pyramid.js"></script>
+  </body>
+</html>

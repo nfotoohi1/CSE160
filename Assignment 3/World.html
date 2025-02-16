@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSE160 - Assignment 3</title>
+  </head>
+  <body onload="main()">
+    <div>
+      <canvas id="Canvas" width="400" height="400" > I don't know what I'm doing and evidently, neither do you. </canvas>
+      <div style="position: relative; left: 420px; top: -410px;">
+        <p id="performance"> XXX </p>
+      </div>
+      <div style="position: relative; left: 420px; top: -405px;">
+        <label for="slideRotate">Rotate:</label>
+      </div>
+      <div style="position: relative; left: 480px; top: -424px;">
+        <input type="range" min="-180" max="180" value="0" class="slider" id="slideRotate">
+      </div>
+      <div style="position: relative; left: 420px; top: -400px;">
+        Help the dog! The dog is trapped behind the blocks and he needs your help to free him!
+      </div>
+      <div style="position: relative; left: 420px; top: -390px;">
+        Use your 'P' button to get rid of the blocks.
+        Your 'O' button will place the blocks again.
+      </div>
+      <div style="position: relative; left: 420px; top: -380px;">
+        Wow:
+        Press your space key to jump higher to see better!
+      </div>
+      <div style="position: relative; left: 420px; top: -380px;">
+        If you want to get down to get closer, you can use your shift key to go back down!
+      </div>
+
+
+    </div>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Pyramid.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Animal.js"></script>
+    <script src="Map.js"></script>
+    <script src="Picture.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>

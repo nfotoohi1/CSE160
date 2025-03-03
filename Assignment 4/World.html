@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSE160 - Assignment 3</title>
+  </head>
+  <body onload="main()">
+    <div>
+      <canvas id="Canvas" width="400" height="400" > I don't know what I'm doing and evidently, neither do you. </canvas>
+      <div style="position: relative; left: 420px; top: -410px;">
+        <p id="performance"> XXX </p>
+      </div>
+      <div style="position: relative; left: 420px; top: -405px;">
+        <label for="slideRotate">Rotate:</label>
+      </div>
+      <div style="position: relative; left: 480px; top: -424px;">
+        <input type="range" min="-180" max="180" value="0" class="slider" id="slideRotate">
+      </div>
+      <div>
+        <button type="button" id="normOn">Normal On</button>
+        <button type="button" id="normOff">Normal Off</button>
+      </div>
+      <div>
+        <label for="slideLightX">Light X:</label>
+        <input type="range" min="-250" max="250" value="0" class="slider" id="slideLightX">
+      </div>
+      <div>
+        <label for="slideLightY">Light Y:</label>
+        <input type="range" min="-250" max="250" value="100" class="slider" id="slideLightY">
+      </div>
+      <div>
+        <label for="slideLightZ">Light Z:</label>
+        <input type="range" min="-250" max="250" value="200" class="slider" id="slideLightZ">
+      </div>
+      <div>
+        <button type="button" id="lightOn">Light On</button>
+        <button type="button" id="lightOff">Light Off</button>
+      </div>
+
+      <div>
+        <label for="slideR">Red</label><br>
+        <input type="range" min="0" max="100" value="100" class="slider" id="slideR">
+      </div>
+      <div>
+        <label for="slideR">Green</label><br>
+        <input type="range" min="0" max="100" value="100" class="slider" id="slideG">
+      </div>
+      <div>
+        <label for="slideR">Blue</label><br>
+        <input type="range" min="0" max="100" value="100" class="slider" id="slideB">
+      </div>
+
+    </div>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Picture.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>

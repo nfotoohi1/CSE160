@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSE160 - Assignment 5</title>
+  </head>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.174.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.174.0/examples/jsm/"
+      }
+    }
+  </script>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div>
+      <div style="font-size: 30px; position: absolute; top: 35px; left: 785px;">
+        Camera Controls
+      </div>
+      <div style="font-size: 30px; position: absolute; top: 135px; left: 780px;">
+        Ambient Controls
+      </div>
+      <div style="font-size: 30px; position: absolute; top: 235px; left: 745px;">
+        Hemispherical Controls
+      </div>
+      <div style="font-size: 30px; position: absolute; top: 335px; left: 815px;">
+        Fog Controls
+      </div>
+      <div style="position: absolute; top: 480px;">
+        Shadows: The shadows are visible if you turn the camera all the way around to view the back of the smile.
+        To see the effect of the shadows, play with the two light controls.
+      </div>
+      <div style="position: absolute; top: 510px;">
+        Fog: The effect of the fog can be seen if you turn the camera far away from either the moon or the sun.
+        You can also see its effect if you pay with the Fog Controls.
+      </div>
+      <div style="position: absolute; top: 540px;">
+        Raycasting: It's pretty easy to see that the raycasting is there, but try to not brush the mouse over the
+        3D object because then the raycasting stops working and you have to refresh for it to work.
+      </div>
+      <div style="position: absolute; top: 570px;">
+        The 3D Object Plant is textured. It's just textured weirdly, it's not my fault.
+        Also ignore the blob, even though the blob was not invited.
+      </div>
+      
+    </div>
+    <script type="module" src="asgn5.js"></script>
+    <script src="GUIHelper.js"></script>
+  </body>
+</html>
